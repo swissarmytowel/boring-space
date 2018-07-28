@@ -149,6 +149,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Entity.obj: src/Entity.cpp.obj
+
+.PHONY : src/Entity.obj
+
+# target to build an object file
+src/Entity.cpp.obj:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Entity.cpp.obj
+.PHONY : src/Entity.cpp.obj
+
+src/Entity.i: src/Entity.cpp.i
+
+.PHONY : src/Entity.i
+
+# target to preprocess a source file
+src/Entity.cpp.i:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Entity.cpp.i
+.PHONY : src/Entity.cpp.i
+
+src/Entity.s: src/Entity.cpp.s
+
+.PHONY : src/Entity.s
+
+# target to generate assembly for a file
+src/Entity.cpp.s:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Entity.cpp.s
+.PHONY : src/Entity.cpp.s
+
+src/Player.obj: src/Player.cpp.obj
+
+.PHONY : src/Player.obj
+
+# target to build an object file
+src/Player.cpp.obj:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Player.cpp.obj
+.PHONY : src/Player.cpp.obj
+
+src/Player.i: src/Player.cpp.i
+
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
 src/Point2D.obj: src/Point2D.cpp.obj
 
 .PHONY : src/Point2D.obj
@@ -215,6 +269,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Entity.obj
+	@echo ... src/Entity.i
+	@echo ... src/Entity.s
+	@echo ... src/Player.obj
+	@echo ... src/Player.i
+	@echo ... src/Player.s
 	@echo ... src/Point2D.obj
 	@echo ... src/Point2D.i
 	@echo ... src/Point2D.s

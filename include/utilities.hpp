@@ -1,14 +1,26 @@
 #pragma once
 
 #include <iostream>
+#include <vector>
 #include <exception>
 #include <memory>
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
+#include <Point2D.hpp>
+
 namespace util
 {
+    using rectangle = SDL_Rect;
+    using event = SDL_Event;
+
+    struct AnimationInformation
+    {
+        std::vector<rectangle> animationClips;
+        double changeRate;
+    };
+
     class SDLException: public std::exception
     {
     public:
@@ -69,12 +81,14 @@ namespace util
     using sWindow = SharedPtr<SDL_Window, SdlDeleter>;
     using sRenderer = SharedPtr<SDL_Renderer, SdlDeleter>;
 
-    using rectangle = SDL_Rect;
-
     // Initializer and deinitializer functions for SDL
     void initializeSdlSystems(Uint32 sdlFlags, Uint32 imageFlags);
 
     void quitSdlSystems();
 
     uTexture loadTexture(uRenderer &r, const std::string &path);
+
+    uWindow createWindow(const std::string &title, const Point2D &dimensions, Uint32 flags);
+    uRenderer createRenderer(Uint32 flags, uWindow &window);
+
 }

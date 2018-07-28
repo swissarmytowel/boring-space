@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+../include/Entity.hpp
+Point2D.hpp
+-
+utilities.hpp
+-
+utility
+-
+
+../include/Player.hpp
+Entity.hpp
+-
+
+../include/Point2D.hpp
+cmath
+-
+
 ../include/SDL2/SDL.h
 SDL_main.h
 ../include/SDL2/SDL_main.h
@@ -599,6 +615,8 @@ close_code.h
 ../include/utilities.hpp
 iostream
 -
+vector
+-
 exception
 -
 memory
@@ -607,11 +625,23 @@ SDL2/SDL.h
 -
 SDL2/SDL_image.h
 -
+Point2D.hpp
+-
 
 D:/Software Engeniering/boring_space/main.cpp
 iostream
 -
+Player.hpp
+-
 utilities.hpp
+-
+
+D:/Software Engeniering/boring_space/src/Entity.cpp
+Entity.hpp
+-
+
+D:/Software Engeniering/boring_space/src/Point2D.cpp
+Point2D.hpp
 -
 
 D:/Software Engeniering/boring_space/src/utilities.cpp

@@ -18,6 +18,25 @@ void ::util::quitSdlSystems()
 util::uTexture util::loadTexture(util::uRenderer &r, const std::string &path)
 {
     uTexture tmp(IMG_LoadTexture(r.get(), path.c_str()));
-    if (tmp == nullptr) std::cerr << "Cannot load texture " << path << std::endl;
+    if (tmp == nullptr) throw SDLException("Can not load texture " + path);
     return tmp;
+}
+
+util::uRenderer util::createRenderer(const Uint32 flags, uWindow &window)
+{
+    uRenderer renderer(SDL_CreateRenderer(window.get(), 0, flags));
+    if (renderer == nullptr) throw SDLException("Can not create renderer");
+    return renderer;
+}
+
+util::uWindow util::createWindow(const std::string &title, const Point2D &dimensions, const Uint32 flags)
+{
+    uWindow window(SDL_CreateWindow(title.c_str(),
+                                    SDL_WINDOWPOS_CENTERED,
+                                    SDL_WINDOWPOS_CENTERED,
+                                    static_cast<int>(dimensions.getX()),
+                                    static_cast<int>(dimensions.getY()),
+                                    flags));
+    if (window == nullptr) throw SDLException("Cannot create window");
+    return window;
 }

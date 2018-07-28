@@ -131,11 +131,63 @@ CMakeFiles/boring_space.dir/src/Point2D.cpp.obj.provides: CMakeFiles/boring_spac
 CMakeFiles/boring_space.dir/src/Point2D.cpp.obj.provides.build: CMakeFiles/boring_space.dir/src/Point2D.cpp.obj
 
 
+CMakeFiles/boring_space.dir/src/Entity.cpp.obj: CMakeFiles/boring_space.dir/flags.make
+CMakeFiles/boring_space.dir/src/Entity.cpp.obj: CMakeFiles/boring_space.dir/includes_CXX.rsp
+CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../src/Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Software Engeniering\boring_space\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/boring_space.dir/src/Entity.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-W\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\boring_space.dir\src\Entity.cpp.obj -c "D:\Software Engeniering\boring_space\src\Entity.cpp"
+
+CMakeFiles/boring_space.dir/src/Entity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boring_space.dir/src/Entity.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Software Engeniering\boring_space\src\Entity.cpp" > CMakeFiles\boring_space.dir\src\Entity.cpp.i
+
+CMakeFiles/boring_space.dir/src/Entity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boring_space.dir/src/Entity.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Software Engeniering\boring_space\src\Entity.cpp" -o CMakeFiles\boring_space.dir\src\Entity.cpp.s
+
+CMakeFiles/boring_space.dir/src/Entity.cpp.obj.requires:
+
+.PHONY : CMakeFiles/boring_space.dir/src/Entity.cpp.obj.requires
+
+CMakeFiles/boring_space.dir/src/Entity.cpp.obj.provides: CMakeFiles/boring_space.dir/src/Entity.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Entity.cpp.obj.provides.build
+.PHONY : CMakeFiles/boring_space.dir/src/Entity.cpp.obj.provides
+
+CMakeFiles/boring_space.dir/src/Entity.cpp.obj.provides.build: CMakeFiles/boring_space.dir/src/Entity.cpp.obj
+
+
+CMakeFiles/boring_space.dir/src/Player.cpp.obj: CMakeFiles/boring_space.dir/flags.make
+CMakeFiles/boring_space.dir/src/Player.cpp.obj: CMakeFiles/boring_space.dir/includes_CXX.rsp
+CMakeFiles/boring_space.dir/src/Player.cpp.obj: ../src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Software Engeniering\boring_space\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/boring_space.dir/src/Player.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-W\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\boring_space.dir\src\Player.cpp.obj -c "D:\Software Engeniering\boring_space\src\Player.cpp"
+
+CMakeFiles/boring_space.dir/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boring_space.dir/src/Player.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Software Engeniering\boring_space\src\Player.cpp" > CMakeFiles\boring_space.dir\src\Player.cpp.i
+
+CMakeFiles/boring_space.dir/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boring_space.dir/src/Player.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-W\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Software Engeniering\boring_space\src\Player.cpp" -o CMakeFiles\boring_space.dir\src\Player.cpp.s
+
+CMakeFiles/boring_space.dir/src/Player.cpp.obj.requires:
+
+.PHONY : CMakeFiles/boring_space.dir/src/Player.cpp.obj.requires
+
+CMakeFiles/boring_space.dir/src/Player.cpp.obj.provides: CMakeFiles/boring_space.dir/src/Player.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Player.cpp.obj.provides.build
+.PHONY : CMakeFiles/boring_space.dir/src/Player.cpp.obj.provides
+
+CMakeFiles/boring_space.dir/src/Player.cpp.obj.provides.build: CMakeFiles/boring_space.dir/src/Player.cpp.obj
+
+
 # Object files for target boring_space
 boring_space_OBJECTS = \
 "CMakeFiles/boring_space.dir/main.cpp.obj" \
 "CMakeFiles/boring_space.dir/src/utilities.cpp.obj" \
-"CMakeFiles/boring_space.dir/src/Point2D.cpp.obj"
+"CMakeFiles/boring_space.dir/src/Point2D.cpp.obj" \
+"CMakeFiles/boring_space.dir/src/Entity.cpp.obj" \
+"CMakeFiles/boring_space.dir/src/Player.cpp.obj"
 
 # External object files for target boring_space
 boring_space_EXTERNAL_OBJECTS =
@@ -143,11 +195,13 @@ boring_space_EXTERNAL_OBJECTS =
 boring_space.exe: CMakeFiles/boring_space.dir/main.cpp.obj
 boring_space.exe: CMakeFiles/boring_space.dir/src/utilities.cpp.obj
 boring_space.exe: CMakeFiles/boring_space.dir/src/Point2D.cpp.obj
+boring_space.exe: CMakeFiles/boring_space.dir/src/Entity.cpp.obj
+boring_space.exe: CMakeFiles/boring_space.dir/src/Player.cpp.obj
 boring_space.exe: CMakeFiles/boring_space.dir/build.make
 boring_space.exe: CMakeFiles/boring_space.dir/linklibs.rsp
 boring_space.exe: CMakeFiles/boring_space.dir/objects1.rsp
 boring_space.exe: CMakeFiles/boring_space.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Software Engeniering\boring_space\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable boring_space.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Software Engeniering\boring_space\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable boring_space.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\boring_space.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +212,8 @@ CMakeFiles/boring_space.dir/build: boring_space.exe
 CMakeFiles/boring_space.dir/requires: CMakeFiles/boring_space.dir/main.cpp.obj.requires
 CMakeFiles/boring_space.dir/requires: CMakeFiles/boring_space.dir/src/utilities.cpp.obj.requires
 CMakeFiles/boring_space.dir/requires: CMakeFiles/boring_space.dir/src/Point2D.cpp.obj.requires
+CMakeFiles/boring_space.dir/requires: CMakeFiles/boring_space.dir/src/Entity.cpp.obj.requires
+CMakeFiles/boring_space.dir/requires: CMakeFiles/boring_space.dir/src/Player.cpp.obj.requires
 
 .PHONY : CMakeFiles/boring_space.dir/requires
 
