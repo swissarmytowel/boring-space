@@ -149,6 +149,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Point2D.obj: src/Point2D.cpp.obj
+
+.PHONY : src/Point2D.obj
+
+# target to build an object file
+src/Point2D.cpp.obj:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Point2D.cpp.obj
+.PHONY : src/Point2D.cpp.obj
+
+src/Point2D.i: src/Point2D.cpp.i
+
+.PHONY : src/Point2D.i
+
+# target to preprocess a source file
+src/Point2D.cpp.i:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Point2D.cpp.i
+.PHONY : src/Point2D.cpp.i
+
+src/Point2D.s: src/Point2D.cpp.s
+
+.PHONY : src/Point2D.s
+
+# target to generate assembly for a file
+src/Point2D.cpp.s:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Point2D.cpp.s
+.PHONY : src/Point2D.cpp.s
+
 src/utilities.obj: src/utilities.cpp.obj
 
 .PHONY : src/utilities.obj
@@ -188,6 +215,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Point2D.obj
+	@echo ... src/Point2D.i
+	@echo ... src/Point2D.s
 	@echo ... src/utilities.obj
 	@echo ... src/utilities.i
 	@echo ... src/utilities.s

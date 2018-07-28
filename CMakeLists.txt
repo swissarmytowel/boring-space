@@ -9,7 +9,7 @@ set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
 include_directories(include)
 link_directories(lib)
 
-set(SOURCE_FILES main.cpp include/utilities.hpp src/utilities.cpp)
+set(SOURCE_FILES main.cpp include/utilities.hpp src/utilities.cpp include/Point2D.hpp src/Point2D.cpp)
 
 add_executable(boring_space ${SOURCE_FILES})
 

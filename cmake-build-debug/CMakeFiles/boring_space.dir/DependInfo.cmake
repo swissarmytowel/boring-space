@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Software Engeniering/boring_space/main.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/main.cpp.obj"
+  "D:/Software Engeniering/boring_space/src/Point2D.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/Point2D.cpp.obj"
   "D:/Software Engeniering/boring_space/src/utilities.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/utilities.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/boring_space.dir/main.cpp.obj"
   "CMakeFiles/boring_space.dir/src/utilities.cpp.obj"
+  "CMakeFiles/boring_space.dir/src/Point2D.cpp.obj"
   "boring_space.pdb"
   "boring_space.exe"
   "boring_space.exe.manifest"
