@@ -88,6 +88,9 @@
 		<Unit filename="D:/Software Engeniering/boring_space/include/Entity.hpp">
 			<Option target="boring_space"/>
 		</Unit>
+		<Unit filename="D:/Software Engeniering/boring_space/include/Particle.hpp">
+			<Option target="boring_space"/>
+		</Unit>
 		<Unit filename="D:/Software Engeniering/boring_space/include/Player.hpp">
 			<Option target="boring_space"/>
 		</Unit>
@@ -104,6 +107,9 @@
 			<Option target="boring_space"/>
 		</Unit>
 		<Unit filename="D:/Software Engeniering/boring_space/src/Entity.cpp">
+			<Option target="boring_space"/>
+		</Unit>
+		<Unit filename="D:/Software Engeniering/boring_space/src/Particle.cpp">
 			<Option target="boring_space"/>
 		</Unit>
 		<Unit filename="D:/Software Engeniering/boring_space/src/Player.cpp">

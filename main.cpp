@@ -1,5 +1,6 @@
 #include <iostream>
 #include <Player.hpp>
+#include <Particle.hpp>
 
 #include <utilities.hpp>
 
@@ -31,6 +32,7 @@ int main(int argc, char *argv[])
 
     util::event keyboardEvent{};
     auto keyEvents = SDL_GetKeyboardState(nullptr);
+    auto particles = visual::generateParticles(100);
 
     while (keyboardEvent.type != SDL_QUIT)
     {
@@ -42,17 +44,25 @@ int main(int argc, char *argv[])
                                e.getClipRectangle().h};
         SDL_RenderCopy(renderer.get(), sprites.get(), &e.getClipRectangle(), &dst);
 
+        for (auto &&i : particles)
+        {
+            SDL_SetRenderDrawColor(renderer.get(), 255, 255, 255, 255);
+            SDL_RenderDrawPoint(renderer.get(),
+                                static_cast<int>(i.getPosition().getX()), static_cast<int>(i.getPosition().getY()));
+            i.update();
+            SDL_SetRenderDrawColor(renderer.get(), 0, 0, 0, 255);
+        }
+
         SDL_RenderPresent(renderer.get());
 
         SDL_PollEvent(&keyboardEvent);
 
-        if(keyboardEvent.type == SDL_KEYDOWN)
+        if (keyboardEvent.type == SDL_KEYDOWN)
         {
             if (keyEvents[SDL_SCANCODE_LEFT])
             {
                 e.update(entity::Direction::LEFT);
             }
-
             if (keyEvents[SDL_SCANCODE_SPACE]) std::cout << "space\n";
 
             if (keyEvents[SDL_SCANCODE_RIGHT])
@@ -63,5 +73,6 @@ int main(int argc, char *argv[])
     }
 
     util::quitSdlSystems();
+
     return EXIT_SUCCESS;
 }

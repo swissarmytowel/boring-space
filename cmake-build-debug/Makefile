@@ -203,6 +203,33 @@ src/Entity.cpp.s:
 	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Entity.cpp.s
 .PHONY : src/Entity.cpp.s
 
+src/Particle.obj: src/Particle.cpp.obj
+
+.PHONY : src/Particle.obj
+
+# target to build an object file
+src/Particle.cpp.obj:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Particle.cpp.obj
+.PHONY : src/Particle.cpp.obj
+
+src/Particle.i: src/Particle.cpp.i
+
+.PHONY : src/Particle.i
+
+# target to preprocess a source file
+src/Particle.cpp.i:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Particle.cpp.i
+.PHONY : src/Particle.cpp.i
+
+src/Particle.s: src/Particle.cpp.s
+
+.PHONY : src/Particle.s
+
+# target to generate assembly for a file
+src/Particle.cpp.s:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Particle.cpp.s
+.PHONY : src/Particle.cpp.s
+
 src/Player.obj: src/Player.cpp.obj
 
 .PHONY : src/Player.obj
@@ -302,6 +329,9 @@ help:
 	@echo ... src/Entity.obj
 	@echo ... src/Entity.i
 	@echo ... src/Entity.s
+	@echo ... src/Particle.obj
+	@echo ... src/Particle.i
+	@echo ... src/Particle.s
 	@echo ... src/Player.obj
 	@echo ... src/Player.i
 	@echo ... src/Player.s

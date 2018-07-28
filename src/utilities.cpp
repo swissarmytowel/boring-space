@@ -1,4 +1,6 @@
 #include <utilities.hpp>
+#include <time.h>
+#include <ctime>
 
 void util::initializeSdlSystems(Uint32 sdlFlags, Uint32 imageFlags)
 {
@@ -41,11 +43,19 @@ util::uWindow util::createWindow(const std::string &title, const Point2D &dimens
     return window;
 }
 
+const double ::util::generateRandom(double lower, double upper)
+{
+    static std::mt19937 generator(static_cast<unsigned int>(std::time(nullptr)*1000));
+    std::uniform_real_distribution<> distribution(lower, upper);
+
+    return distribution(generator);
+}
+
 util::SDLException::SDLException(std::string message)
     : _message(std::move(message))
 {}
 
-const char *util::SDLException::what() const
+const char *util::SDLException::what() const throw()
 {
     return _message.c_str();
 }

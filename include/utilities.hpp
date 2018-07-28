@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <random>
 #include <exception>
 #include <memory>
 
@@ -74,4 +75,6 @@ namespace util
 
     uWindow createWindow(const std::string &title, const Point2D &dimensions, Uint32 flags);
     uRenderer createRenderer(Uint32 flags, uWindow &window);
+
+    const double generateRandom(double lower, double upper);
 }
