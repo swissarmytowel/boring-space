@@ -1,0 +1,3 @@
+include/SDL/* linguist-vendored
+CMakeLists.txt linguist-vendored
+cmake-build-debug/* linguist-vendored
