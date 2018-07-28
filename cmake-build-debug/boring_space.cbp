@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Software Engeniering/boring_space/include/Asteroid.hpp">
+			<Option target="boring_space"/>
+		</Unit>
 		<Unit filename="D:/Software Engeniering/boring_space/include/Entity.hpp">
 			<Option target="boring_space"/>
 		</Unit>
@@ -95,6 +98,9 @@
 			<Option target="boring_space"/>
 		</Unit>
 		<Unit filename="D:/Software Engeniering/boring_space/main.cpp">
+			<Option target="boring_space"/>
+		</Unit>
+		<Unit filename="D:/Software Engeniering/boring_space/src/Asteroid.cpp">
 			<Option target="boring_space"/>
 		</Unit>
 		<Unit filename="D:/Software Engeniering/boring_space/src/Entity.cpp">

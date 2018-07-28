@@ -1,6 +1,6 @@
 #include <utilities.hpp>
 
-void ::util::initializeSdlSystems(Uint32 sdlFlags, Uint32 imageFlags)
+void util::initializeSdlSystems(Uint32 sdlFlags, Uint32 imageFlags)
 {
     auto sdlErrorCode = SDL_Init(sdlFlags);
     if (sdlErrorCode < 0) throw SDLException("SDL cannot be initialized!");
@@ -9,7 +9,7 @@ void ::util::initializeSdlSystems(Uint32 sdlFlags, Uint32 imageFlags)
     if (imgErrorCode < 0) throw SDLException("SDL_image cannot be initialized!");
 }
 
-void ::util::quitSdlSystems()
+void util::quitSdlSystems()
 {
     IMG_Quit();
     SDL_Quit;
@@ -39,4 +39,28 @@ util::uWindow util::createWindow(const std::string &title, const Point2D &dimens
                                     flags));
     if (window == nullptr) throw SDLException("Cannot create window");
     return window;
+}
+
+util::SDLException::SDLException(std::string message)
+    : _message(std::move(message))
+{}
+
+const char *util::SDLException::what() const
+{
+    return _message.c_str();
+}
+
+void util::SdlDeleter::operator()(SDL_Texture *texture)
+{
+    if (texture) SDL_DestroyTexture(texture);
+}
+
+void util::SdlDeleter::operator()(SDL_Window *window)
+{
+    if (window) SDL_DestroyWindow(window);
+}
+
+void util::SdlDeleter::operator()(SDL_Renderer *renderer)
+{
+    if (renderer) SDL_DestroyRenderer(renderer);
 }

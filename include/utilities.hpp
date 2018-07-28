@@ -24,14 +24,9 @@ namespace util
     class SDLException: public std::exception
     {
     public:
-        explicit SDLException(std::string message)
-            : _message(std::move(message))
-        {};
+        explicit SDLException(std::string message);
 
-        const char *what() const throw() override
-        {
-            return _message.c_str();
-        }
+        const char *what() const throw() override;
 
     private:
         std::string _message;
@@ -40,20 +35,9 @@ namespace util
     class SdlDeleter
     {
     public:
-        void operator()(SDL_Texture *texture)
-        {
-            if (texture) SDL_DestroyTexture(texture);
-        }
-
-        void operator()(SDL_Window *window)
-        {
-            if (window) SDL_DestroyWindow(window);
-        }
-
-        void operator()(SDL_Renderer *renderer)
-        {
-            if (renderer) SDL_DestroyRenderer(renderer);
-        }
+        void operator()(SDL_Texture *texture);
+        void operator()(SDL_Window *window);
+        void operator()(SDL_Renderer *renderer);
     };
 
     // Shared ptr with deleter class
@@ -90,5 +74,4 @@ namespace util
 
     uWindow createWindow(const std::string &title, const Point2D &dimensions, Uint32 flags);
     uRenderer createRenderer(Uint32 flags, uWindow &window);
-
 }

@@ -149,6 +149,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Asteroid.obj: src/Asteroid.cpp.obj
+
+.PHONY : src/Asteroid.obj
+
+# target to build an object file
+src/Asteroid.cpp.obj:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj
+.PHONY : src/Asteroid.cpp.obj
+
+src/Asteroid.i: src/Asteroid.cpp.i
+
+.PHONY : src/Asteroid.i
+
+# target to preprocess a source file
+src/Asteroid.cpp.i:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Asteroid.cpp.i
+.PHONY : src/Asteroid.cpp.i
+
+src/Asteroid.s: src/Asteroid.cpp.s
+
+.PHONY : src/Asteroid.s
+
+# target to generate assembly for a file
+src/Asteroid.cpp.s:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Asteroid.cpp.s
+.PHONY : src/Asteroid.cpp.s
+
 src/Entity.obj: src/Entity.cpp.obj
 
 .PHONY : src/Entity.obj
@@ -269,6 +296,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Asteroid.obj
+	@echo ... src/Asteroid.i
+	@echo ... src/Asteroid.s
 	@echo ... src/Entity.obj
 	@echo ... src/Entity.i
 	@echo ... src/Entity.s
