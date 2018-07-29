@@ -31,3 +31,5 @@ entity::Player::Player(const util::Point2D &position,
                        double speed)
     : Entity(position, clipRectangle, animationInformation, speed)
 {}
+
+

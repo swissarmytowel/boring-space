@@ -7,6 +7,7 @@ namespace entity
     class Player: public Entity
     {
     public:
+        Player() = default;
         Player(const util::Point2D &position,
                const util::rectangle &clipRectangle,
                const util::AnimationInformation &animationInformation,

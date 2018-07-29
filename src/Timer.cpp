@@ -3,7 +3,6 @@
 util::Timer::Timer()
 {
     reset();
-    setTimeScale();
     _deltaTime = std::chrono::duration<double>(0.0);
 }
 
@@ -20,4 +19,10 @@ const double util::Timer::getDeltaTime() const
 void util::Timer::tick()
 {
     _deltaTime = std::chrono::system_clock::now() - _startTime;
+}
+
+util::Timer &util::Timer::instance()
+{
+    static Timer timer;
+    return timer;
 }

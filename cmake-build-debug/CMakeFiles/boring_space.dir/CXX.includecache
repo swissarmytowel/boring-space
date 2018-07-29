@@ -18,6 +18,26 @@ utilities.hpp
 utility
 -
 
+../include/Game.hpp
+vector
+-
+algorithm
+-
+utilities.hpp
+-
+globals.hpp
+-
+Player.hpp
+-
+Asteroid.hpp
+-
+Particle.hpp
+-
+Point2D.hpp
+-
+Timer.hpp
+-
+
 ../include/Particle.hpp
 vector
 -
@@ -628,12 +648,16 @@ close_code.h
 
 ../include/SDL2/close_code.h
 
+../include/Timer.hpp
+chrono
+-
+
 ../include/globals.hpp
 SDL2/SDL.h
 -
 SDL2/SDL_image.h
 -
-cmath
+Timer.hpp
 -
 
 ../include/utilities.hpp
@@ -657,13 +681,7 @@ Point2D.hpp
 D:/Software Engeniering/boring_space/main.cpp
 iostream
 -
-Player.hpp
--
-Particle.hpp
--
-globals.hpp
--
-utilities.hpp
+Game.hpp
 -
 
 D:/Software Engeniering/boring_space/src/Asteroid.cpp
@@ -672,6 +690,10 @@ Asteroid.hpp
 
 D:/Software Engeniering/boring_space/src/Entity.cpp
 Entity.hpp
+-
+
+D:/Software Engeniering/boring_space/src/Game.cpp
+Game.hpp
 -
 
 D:/Software Engeniering/boring_space/src/Particle.cpp
@@ -684,6 +706,10 @@ Player.hpp
 
 D:/Software Engeniering/boring_space/src/Point2D.cpp
 Point2D.hpp
+-
+
+D:/Software Engeniering/boring_space/src/Timer.cpp
+Timer.hpp
 -
 
 D:/Software Engeniering/boring_space/src/utilities.cpp

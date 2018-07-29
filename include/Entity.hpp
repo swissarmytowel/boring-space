@@ -24,6 +24,8 @@ namespace entity
               _animationInformation(std::move(animationInformation)), _movementSpeed(speed)
         {}
 
+        Entity() = default;
+
         virtual void move(const util::Point2D &modifier) = 0;
         virtual void update(Direction direction) = 0;
 

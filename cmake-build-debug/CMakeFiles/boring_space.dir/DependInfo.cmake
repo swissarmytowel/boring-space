@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Software Engeniering/boring_space/main.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/main.cpp.obj"
   "D:/Software Engeniering/boring_space/src/Asteroid.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj"
   "D:/Software Engeniering/boring_space/src/Entity.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/Entity.cpp.obj"
+  "D:/Software Engeniering/boring_space/src/Game.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/Game.cpp.obj"
   "D:/Software Engeniering/boring_space/src/Particle.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/Particle.cpp.obj"
   "D:/Software Engeniering/boring_space/src/Player.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/Player.cpp.obj"
   "D:/Software Engeniering/boring_space/src/Point2D.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/Point2D.cpp.obj"

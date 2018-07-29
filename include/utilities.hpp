@@ -16,6 +16,15 @@ namespace util
     using rectangle = SDL_Rect;
     using event = SDL_Event;
 
+    struct ScoreInfo
+    {
+        ScoreInfo(unsigned int currentScore, unsigned int highScore)
+            : currentScore(currentScore), highScore(highScore)
+        {};
+        unsigned int currentScore;
+        unsigned int highScore;
+    };
+
     struct AnimationInformation
     {
         std::vector<rectangle> animationClips;
