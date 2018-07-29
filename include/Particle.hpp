@@ -4,6 +4,8 @@
 #include <random>
 
 #include "Point2D.hpp"
+
+#include <globals.hpp>
 #include "utilities.hpp"
 
 namespace visual
@@ -20,12 +22,16 @@ namespace visual
 
         const util::Point2D &getPosition() const;
 
+        void subtractFromY(double value);
+
         double getSpeed() const;
+        void updateSpeed(double scaleFactor);
 
     private:
         double _speed;
         util::Point2D _position;
     };
 
-    std::vector<Particle> generateParticles(std::size_t quantity);
+    Particle generateParticle(double speedFactor, bool randomY=true);
+    std::vector<Particle> generateParticles(std::size_t quantity, double speedFactor);
 }

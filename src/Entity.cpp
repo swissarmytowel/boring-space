@@ -69,3 +69,11 @@ void entity::Entity::setMovementSpeed(double movementSpeed)
 {
     Entity::_movementSpeed = movementSpeed;
 }
+
+const util::Point2D entity::Entity::getRelativePosition() const
+{
+    const auto x = _centeredPosition.getX() - static_cast<double>(_clipRectangle.w) / 2.0;
+    const auto y = _centeredPosition.getY() + static_cast<double>(_clipRectangle.h) / 2.0;
+
+    return {x, y};
+}

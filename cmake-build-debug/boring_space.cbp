@@ -97,6 +97,9 @@
 		<Unit filename="D:/Software Engeniering/boring_space/include/Point2D.hpp">
 			<Option target="boring_space"/>
 		</Unit>
+		<Unit filename="D:/Software Engeniering/boring_space/include/globals.hpp">
+			<Option target="boring_space"/>
+		</Unit>
 		<Unit filename="D:/Software Engeniering/boring_space/include/utilities.hpp">
 			<Option target="boring_space"/>
 		</Unit>

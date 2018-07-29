@@ -14,14 +14,33 @@ double visual::Particle::getSpeed() const
 {
     return _speed;
 }
+void visual::Particle::subtractFromY(double value)
+{
+    _position.addToY(-value);
+}
 
-std::vector<visual::Particle> visual::generateParticles(std::size_t quantity)
+void visual::Particle::updateSpeed(double scaleFactor)
+{
+    _speed += _speed * scaleFactor;
+    std::cout << _speed << std::endl;
+}
+
+std::vector<visual::Particle> visual::generateParticles(std::size_t quantity, double speedFactor)
 {
     auto particles = std::vector<Particle>(quantity);
     for (auto &&particle : particles)
     {
-        particle =
-            Particle({util::generateRandom(5, 300), util::generateRandom(5, 400)}, util::generateRandom(1.0, 5.0));
+        particle = generateParticle(speedFactor);
     }
     return particles;
 }
+
+visual::Particle visual::generateParticle(double speedFactor, bool randomY)
+{
+    return {
+        {util::generateRandom(0, globals::GlobalConstants::WINDOW_WIDTH),
+         randomY ? util::generateRandom(0.0, globals::GlobalConstants::WINDOW_HEIGHT) : 0.0},
+        util::generateRandom(1.0, 5.0 + 5.0 * speedFactor)};
+}
+
+

@@ -2,28 +2,32 @@
 #include <Player.hpp>
 #include <Particle.hpp>
 
+#include <globals.hpp>
 #include <utilities.hpp>
 
 int main(int argc, char *argv[])
 {
-    const auto WINDOW_FLAGS = SDL_WINDOW_SHOWN;
-    const auto RENDERER_FLAGS = SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC;
-
-    const auto WINDOW_DIMENSIONS = util::Point2D(300, 400);
-
     util::uWindow window = nullptr;
     util::uRenderer renderer = nullptr;
     util::uTexture sprites = nullptr;
 
-    entity::Player e(util::Point2D(64, 64), {0, 0, 64, 64}, util::AnimationInformation{}, 5.6);
+    entity::Player e
+        (util::Point2D((double) globals::GlobalConstants::WINDOW_WIDTH / 2.0,
+                       globals::GlobalConstants::WINDOW_HEIGHT - (globals::GlobalConstants::SPRITE_HEIGHT
+                           + globals::GlobalConstants::SPRITE_HEIGHT / 2)),
+         {0, 0, globals::GlobalConstants::SPRITE_WIDTH, globals::GlobalConstants::SPRITE_HEIGHT},
+         util::AnimationInformation{},
+         5.6);
 
     try
     {
         util::initializeSdlSystems(SDL_INIT_EVERYTHING, IMG_INIT_PNG);
 
-        window = util::createWindow("test", WINDOW_DIMENSIONS, WINDOW_FLAGS);
-        renderer = util::createRenderer(RENDERER_FLAGS, window);
-        sprites = util::loadTexture(renderer, "1.png");
+        window = util::createWindow("test",
+                                    {globals::GlobalConstants::WINDOW_WIDTH, globals::GlobalConstants::WINDOW_HEIGHT},
+                                    globals::GlobalConstants::WINDOW_FLAGS);
+        renderer = util::createRenderer(globals::GlobalConstants::RENDERER_FLAGS, window);
+        sprites = util::loadTexture(renderer, "2.png");
     }
     catch (util::SDLException &exception)
     {
@@ -32,26 +36,32 @@ int main(int argc, char *argv[])
 
     util::event keyboardEvent{};
     auto keyEvents = SDL_GetKeyboardState(nullptr);
-    auto particles = visual::generateParticles(100);
+    auto particles = visual::generateParticles(100, 0.0);
 
     while (keyboardEvent.type != SDL_QUIT)
     {
         SDL_RenderClear(renderer.get());
 
         SDL_SetRenderDrawColor(renderer.get(), 0, 0, 0, 255);
-        util::rectangle dst = {static_cast<int>(e.getCenteredPosition().getX()),
-                               static_cast<int>(e.getCenteredPosition().getY()), e.getClipRectangle().w,
-                               e.getClipRectangle().h};
-        SDL_RenderCopy(renderer.get(), sprites.get(), &e.getClipRectangle(), &dst);
 
-        for (auto &&i : particles)
+        for (auto &&particle : particles)
         {
             SDL_SetRenderDrawColor(renderer.get(), 255, 255, 255, 255);
             SDL_RenderDrawPoint(renderer.get(),
-                                static_cast<int>(i.getPosition().getX()), static_cast<int>(i.getPosition().getY()));
-            i.update();
+                                static_cast<int>(particle.getPosition().getX()),
+                                static_cast<int>(particle.getPosition().getY()));
+            particle.update();
+            if (particle.getPosition().getY() >= globals::GlobalConstants::WINDOW_HEIGHT)
+            {
+                particle = visual::generateParticle(0.0, false);
+            }
             SDL_SetRenderDrawColor(renderer.get(), 0, 0, 0, 255);
         }
+
+        util::rectangle dst = {static_cast<int>(e.getRelativePosition().getX()),
+                               static_cast<int>(e.getRelativePosition().getY()), e.getClipRectangle().w,
+                               e.getClipRectangle().h};
+        SDL_RenderCopy(renderer.get(), sprites.get(), &e.getClipRectangle(), &dst);
 
         SDL_RenderPresent(renderer.get());
 

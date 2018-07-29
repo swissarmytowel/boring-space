@@ -30,6 +30,8 @@ namespace entity
         const util::Point2D &getCenteredPosition() const;
         void setCenteredPosition(const util::Point2D &centeredPosition);
 
+        const util::Point2D getRelativePosition() const;
+
         const util::rectangle &getClipRectangle() const;
         void setClipRectangle(const util::rectangle &clipRectangle);
 
