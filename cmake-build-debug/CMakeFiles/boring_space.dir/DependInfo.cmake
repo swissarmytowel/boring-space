@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Software Engeniering/boring_space/src/Particle.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/Particle.cpp.obj"
   "D:/Software Engeniering/boring_space/src/Player.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/Player.cpp.obj"
   "D:/Software Engeniering/boring_space/src/Point2D.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/Point2D.cpp.obj"
+  "D:/Software Engeniering/boring_space/src/Timer.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/Timer.cpp.obj"
   "D:/Software Engeniering/boring_space/src/utilities.cpp" "D:/Software Engeniering/boring_space/cmake-build-debug/CMakeFiles/boring_space.dir/src/utilities.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

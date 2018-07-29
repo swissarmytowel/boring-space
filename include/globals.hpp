@@ -20,5 +20,7 @@ namespace globals
 
         static const auto SPRITE_WIDTH = 64;
         static const auto SPRITE_HEIGHT = 64;
+
+        static const auto FRAME_RATE = 60.0;
     };
 }

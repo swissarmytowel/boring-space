@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
     try
     {
-        util::initializeSdlSystems(SDL_INIT_EVERYTHING, IMG_INIT_PNG);
+        util::initializeSdlSystems(globals::GlobalConstants::SDL_INIT_FLAGS, globals::GlobalConstants::SDL_IMG_FLAGS);
 
         window = util::createWindow("test",
                                     {globals::GlobalConstants::WINDOW_WIDTH, globals::GlobalConstants::WINDOW_HEIGHT},

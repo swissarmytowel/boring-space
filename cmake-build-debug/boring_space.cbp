@@ -97,6 +97,9 @@
 		<Unit filename="D:/Software Engeniering/boring_space/include/Point2D.hpp">
 			<Option target="boring_space"/>
 		</Unit>
+		<Unit filename="D:/Software Engeniering/boring_space/include/Timer.hpp">
+			<Option target="boring_space"/>
+		</Unit>
 		<Unit filename="D:/Software Engeniering/boring_space/include/globals.hpp">
 			<Option target="boring_space"/>
 		</Unit>
@@ -119,6 +122,9 @@
 			<Option target="boring_space"/>
 		</Unit>
 		<Unit filename="D:/Software Engeniering/boring_space/src/Point2D.cpp">
+			<Option target="boring_space"/>
+		</Unit>
+		<Unit filename="D:/Software Engeniering/boring_space/src/Timer.cpp">
 			<Option target="boring_space"/>
 		</Unit>
 		<Unit filename="D:/Software Engeniering/boring_space/src/utilities.cpp">
