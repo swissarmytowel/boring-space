@@ -311,6 +311,33 @@ src/Point2D.cpp.s:
 	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Point2D.cpp.s
 .PHONY : src/Point2D.cpp.s
 
+src/Projectile.obj: src/Projectile.cpp.obj
+
+.PHONY : src/Projectile.obj
+
+# target to build an object file
+src/Projectile.cpp.obj:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Projectile.cpp.obj
+.PHONY : src/Projectile.cpp.obj
+
+src/Projectile.i: src/Projectile.cpp.i
+
+.PHONY : src/Projectile.i
+
+# target to preprocess a source file
+src/Projectile.cpp.i:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Projectile.cpp.i
+.PHONY : src/Projectile.cpp.i
+
+src/Projectile.s: src/Projectile.cpp.s
+
+.PHONY : src/Projectile.s
+
+# target to generate assembly for a file
+src/Projectile.cpp.s:
+	$(MAKE) -f CMakeFiles\boring_space.dir\build.make CMakeFiles/boring_space.dir/src/Projectile.cpp.s
+.PHONY : src/Projectile.cpp.s
+
 src/Timer.obj: src/Timer.cpp.obj
 
 .PHONY : src/Timer.obj
@@ -395,6 +422,9 @@ help:
 	@echo ... src/Point2D.obj
 	@echo ... src/Point2D.i
 	@echo ... src/Point2D.s
+	@echo ... src/Projectile.obj
+	@echo ... src/Projectile.i
+	@echo ... src/Projectile.s
 	@echo ... src/Timer.obj
 	@echo ... src/Timer.i
 	@echo ... src/Timer.s

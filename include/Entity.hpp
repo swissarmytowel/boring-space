@@ -18,12 +18,10 @@ namespace entity
     {
     public:
         explicit Entity(const util::Point2D &position,
-                        util::rectangle clipRectangle,
-                        util::AnimationInformation animationInformation, double speed)
-            : _centeredPosition(position), _clipRectangle(clipRectangle), _health(100), _isAlive(true), _bbox{},
-              _animationInformation(std::move(animationInformation)), _movementSpeed(speed)
-        {}
-
+                                util::rectangle clipRectangle,
+                                util::AnimationInformation animationInformation,
+                                double speed,
+                                double damage=0.0);
         Entity() = default;
 
         virtual void move(const util::Point2D &modifier) = 0;
@@ -51,6 +49,12 @@ namespace entity
 
         virtual ~Entity() = default;
 
+        double getMovementSpeed() const;
+        void setMovementSpeed(double movementSpeed);
+
+        double getDamage() const;
+        void setDamage(double damage);
+
     protected:
         util::Point2D _centeredPosition;
 
@@ -61,10 +65,9 @@ namespace entity
 
         uint16_t _health;
         double _movementSpeed;
-    public:
-        double getMovementSpeed() const;
-        void setMovementSpeed(double movementSpeed);
-    protected:
+
         bool _isAlive;
+
+        double damage;
     };
 }

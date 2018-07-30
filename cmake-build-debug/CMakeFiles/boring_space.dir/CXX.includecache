@@ -33,6 +33,8 @@ Asteroid.hpp
 -
 Particle.hpp
 -
+Projectile.hpp
+-
 Point2D.hpp
 -
 Timer.hpp
@@ -53,9 +55,21 @@ utilities.hpp
 ../include/Player.hpp
 Entity.hpp
 -
+globals.hpp
+-
 
 ../include/Point2D.hpp
 cmath
+-
+
+../include/Projectile.hpp
+Point2D.hpp
+-
+utilities.hpp
+-
+globals.hpp
+-
+Entity.hpp
 -
 
 ../include/SDL2/SDL.h
@@ -706,6 +720,10 @@ Player.hpp
 
 D:/Software Engeniering/boring_space/src/Point2D.cpp
 Point2D.hpp
+-
+
+D:/Software Engeniering/boring_space/src/Projectile.cpp
+Projectile.hpp
 -
 
 D:/Software Engeniering/boring_space/src/Timer.cpp

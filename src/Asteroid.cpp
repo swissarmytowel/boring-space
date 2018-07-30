@@ -4,7 +4,7 @@ entity::Asteroid::Asteroid(const util::Point2D &position,
                            const util::rectangle &clipRectangle,
                            const util::AnimationInformation &animationInformation,
                            double speed)
-    : Entity(position, clipRectangle, animationInformation, speed)
+    : Entity(position, clipRectangle, animationInformation, speed, 0)
 {}
 
 void entity::Asteroid::move(const util::Point2D &modifier)
@@ -35,3 +35,4 @@ void entity::Asteroid::update(entity::Direction direction)
         }
     }
 }
+

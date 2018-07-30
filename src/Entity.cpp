@@ -73,7 +73,26 @@ void entity::Entity::setMovementSpeed(double movementSpeed)
 const util::Point2D entity::Entity::getRelativePosition() const
 {
     const auto x = _centeredPosition.getX() - static_cast<double>(_clipRectangle.w) / 2.0;
-    const auto y = _centeredPosition.getY() + static_cast<double>(_clipRectangle.h) / 2.0;
+    const auto y = _centeredPosition.getY() - static_cast<double>(_clipRectangle.h) / 2.0;
 
     return {x, y};
+}
+
+entity::Entity::Entity(const util::Point2D &position,
+                       util::rectangle clipRectangle,
+                       util::AnimationInformation animationInformation,
+                       double speed,
+                       double damage)
+    : _centeredPosition(position), _clipRectangle(clipRectangle), _health(100), _isAlive(true), _bbox{},
+      _animationInformation(std::move(animationInformation)), _movementSpeed(speed)
+{}
+
+double entity::Entity::getDamage() const
+{
+    return damage;
+}
+
+void entity::Entity::setDamage(double damage)
+{
+    Entity::damage = damage;
 }

@@ -9,6 +9,7 @@
 #include <Player.hpp>
 #include <Asteroid.hpp>
 #include <Particle.hpp>
+#include <Projectile.hpp>
 #include <Point2D.hpp>
 #include <Timer.hpp>
 

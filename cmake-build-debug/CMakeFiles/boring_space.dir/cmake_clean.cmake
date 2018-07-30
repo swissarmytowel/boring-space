@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/boring_space.dir/src/Particle.cpp.obj"
   "CMakeFiles/boring_space.dir/src/Timer.cpp.obj"
   "CMakeFiles/boring_space.dir/src/Game.cpp.obj"
+  "CMakeFiles/boring_space.dir/src/Projectile.cpp.obj"
   "boring_space.pdb"
   "boring_space.exe"
   "boring_space.exe.manifest"

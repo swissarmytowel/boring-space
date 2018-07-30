@@ -1,7 +1,7 @@
 #include <Game.hpp>
 
 game::Game::Game()
-    : _isRunning(true), _scoreInfo{0, 0}, _event{}, _player(), _particles(visual::generateParticles(250, 2.0))
+    : _isRunning(true), _scoreInfo{0, 0}, _event{}, _player(), _particles(visual::generateParticles(250, 0.0))
 {
     _window = util::createWindow("test",
                                  {globals::GlobalConstants::WINDOW_WIDTH, globals::GlobalConstants::WINDOW_HEIGHT},
