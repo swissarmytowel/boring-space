@@ -106,6 +106,8 @@ CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/SDL_version.h
 CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/SDL_video.h
 CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/begin_code.h
 CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/close_code.h
+CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/Timer.hpp
+CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/globals.hpp
 CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/utilities.hpp
 CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../src/Asteroid.cpp
 
@@ -156,6 +158,8 @@ CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/SDL_version.h
 CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/SDL_video.h
 CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/begin_code.h
 CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/close_code.h
+CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/Timer.hpp
+CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/globals.hpp
 CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/utilities.hpp
 CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../src/Entity.cpp
 

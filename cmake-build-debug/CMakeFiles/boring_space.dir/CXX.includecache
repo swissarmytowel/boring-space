@@ -13,6 +13,8 @@ Entity.hpp
 ../include/Entity.hpp
 Point2D.hpp
 -
+globals.hpp
+-
 utilities.hpp
 -
 utility
@@ -54,8 +56,6 @@ utilities.hpp
 
 ../include/Player.hpp
 Entity.hpp
--
-globals.hpp
 -
 
 ../include/Point2D.hpp

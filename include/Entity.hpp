@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Point2D.hpp>
+#include <globals.hpp>
 #include <utilities.hpp>
 #include <utility>
 
@@ -11,7 +12,8 @@ namespace entity
         UP = 0,
         DOWN = 1,
         LEFT = 2,
-        RIGHT = 3
+        RIGHT = 3,
+        PREFFERED = 4
     };
 
     class Entity

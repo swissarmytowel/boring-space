@@ -1,7 +1,6 @@
 #pragma once
 
 #include <Entity.hpp>
-#include <globals.hpp>
 
 namespace entity
 {

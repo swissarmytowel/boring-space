@@ -18,9 +18,14 @@ void entity::Projectile::update(entity::Direction direction)
 {
     switch (direction)
     {
+        case Direction::PREFFERED:
+        {
+            _centeredPosition.addToY(-_movementSpeed);
+            break;
+        }
         case Direction::UP:
         {
-            _centeredPosition.addToY(_movementSpeed);
+            _centeredPosition.addToY(-_movementSpeed);
             break;
         }
         default:
