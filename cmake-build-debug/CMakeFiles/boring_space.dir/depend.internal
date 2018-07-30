@@ -50,6 +50,7 @@ CMakeFiles/boring_space.dir/main.cpp.obj
  ../include/SDL2/SDL_thread.h
  ../include/SDL2/SDL_timer.h
  ../include/SDL2/SDL_touch.h
+ ../include/SDL2/SDL_ttf.h
  ../include/SDL2/SDL_version.h
  ../include/SDL2/SDL_video.h
  ../include/SDL2/begin_code.h
@@ -103,6 +104,7 @@ CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj
  ../include/SDL2/SDL_thread.h
  ../include/SDL2/SDL_timer.h
  ../include/SDL2/SDL_touch.h
+ ../include/SDL2/SDL_ttf.h
  ../include/SDL2/SDL_version.h
  ../include/SDL2/SDL_video.h
  ../include/SDL2/begin_code.h
@@ -155,6 +157,7 @@ CMakeFiles/boring_space.dir/src/Entity.cpp.obj
  ../include/SDL2/SDL_thread.h
  ../include/SDL2/SDL_timer.h
  ../include/SDL2/SDL_touch.h
+ ../include/SDL2/SDL_ttf.h
  ../include/SDL2/SDL_version.h
  ../include/SDL2/SDL_video.h
  ../include/SDL2/begin_code.h
@@ -212,6 +215,7 @@ CMakeFiles/boring_space.dir/src/Game.cpp.obj
  ../include/SDL2/SDL_thread.h
  ../include/SDL2/SDL_timer.h
  ../include/SDL2/SDL_touch.h
+ ../include/SDL2/SDL_ttf.h
  ../include/SDL2/SDL_version.h
  ../include/SDL2/SDL_video.h
  ../include/SDL2/begin_code.h
@@ -264,6 +268,7 @@ CMakeFiles/boring_space.dir/src/Particle.cpp.obj
  ../include/SDL2/SDL_thread.h
  ../include/SDL2/SDL_timer.h
  ../include/SDL2/SDL_touch.h
+ ../include/SDL2/SDL_ttf.h
  ../include/SDL2/SDL_version.h
  ../include/SDL2/SDL_video.h
  ../include/SDL2/begin_code.h
@@ -317,6 +322,7 @@ CMakeFiles/boring_space.dir/src/Player.cpp.obj
  ../include/SDL2/SDL_thread.h
  ../include/SDL2/SDL_timer.h
  ../include/SDL2/SDL_touch.h
+ ../include/SDL2/SDL_ttf.h
  ../include/SDL2/SDL_version.h
  ../include/SDL2/SDL_video.h
  ../include/SDL2/begin_code.h
@@ -373,6 +379,7 @@ CMakeFiles/boring_space.dir/src/Projectile.cpp.obj
  ../include/SDL2/SDL_thread.h
  ../include/SDL2/SDL_timer.h
  ../include/SDL2/SDL_touch.h
+ ../include/SDL2/SDL_ttf.h
  ../include/SDL2/SDL_version.h
  ../include/SDL2/SDL_video.h
  ../include/SDL2/begin_code.h
@@ -427,9 +434,12 @@ CMakeFiles/boring_space.dir/src/utilities.cpp.obj
  ../include/SDL2/SDL_thread.h
  ../include/SDL2/SDL_timer.h
  ../include/SDL2/SDL_touch.h
+ ../include/SDL2/SDL_ttf.h
  ../include/SDL2/SDL_version.h
  ../include/SDL2/SDL_video.h
  ../include/SDL2/begin_code.h
  ../include/SDL2/close_code.h
+ ../include/Timer.hpp
+ ../include/globals.hpp
  ../include/utilities.hpp
  D:/Software Engeniering/boring_space/src/utilities.cpp

@@ -2,7 +2,7 @@
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
-
+#include <string>
 #include <Timer.hpp>
 
 namespace globals
@@ -22,5 +22,7 @@ namespace globals
         static constexpr auto SPRITE_HEIGHT = 64;
 
         static constexpr auto FRAME_RATE = 60.0;
+
     };
+    const std::string BASE_PATH = SDL_GetBasePath();
 }

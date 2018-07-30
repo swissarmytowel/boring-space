@@ -13,4 +13,4 @@ set(SOURCE_FILES main.cpp include/utilities.hpp src/utilities.cpp include/Point2
 
 add_executable(boring_space ${SOURCE_FILES})
 
-target_link_libraries(boring_space mingw32 SDL2main SDL2 SDL2_image)
+target_link_libraries(boring_space mingw32 SDL2main SDL2 SDL2_image SDL2_ttf)

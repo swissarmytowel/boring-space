@@ -636,6 +636,14 @@ begin_code.h
 close_code.h
 ../include/SDL2/close_code.h
 
+../include/SDL2/SDL_ttf.h
+SDL.h
+../include/SDL2/SDL.h
+begin_code.h
+../include/SDL2/begin_code.h
+close_code.h
+../include/SDL2/close_code.h
+
 ../include/SDL2/SDL_version.h
 SDL_stdinc.h
 ../include/SDL2/SDL_stdinc.h
@@ -671,6 +679,8 @@ SDL2/SDL.h
 -
 SDL2/SDL_image.h
 -
+string
+-
 Timer.hpp
 -
 
@@ -685,9 +695,13 @@ exception
 -
 memory
 -
+ctime
+-
 SDL2/SDL.h
 -
 SDL2/SDL_image.h
+-
+SDL2/SDL_ttf.h
 -
 Point2D.hpp
 -
@@ -733,8 +747,6 @@ Timer.hpp
 D:/Software Engeniering/boring_space/src/utilities.cpp
 utilities.hpp
 -
-time.h
--
-ctime
+globals.hpp
 -
 

@@ -5,9 +5,11 @@
 #include <random>
 #include <exception>
 #include <memory>
+#include <ctime>
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
 
 #include <Point2D.hpp>
 
@@ -48,6 +50,7 @@ namespace util
         void operator()(SDL_Texture *texture);
         void operator()(SDL_Window *window);
         void operator()(SDL_Renderer *renderer);
+        void operator()(TTF_Font *font);
     };
 
     // Shared ptr with deleter class
@@ -69,11 +72,13 @@ namespace util
     using uTexture = std::unique_ptr<SDL_Texture, SdlDeleter>;
     using uWindow = std::unique_ptr<SDL_Window, SdlDeleter>;
     using uRenderer = std::unique_ptr<SDL_Renderer, SdlDeleter>;
+    using uFont = std::unique_ptr<TTF_Font, SdlDeleter>;
 
     // Shared pointers to SDL main types
     using sTexture = SharedPtr<SDL_Texture, SdlDeleter>;
     using sWindow = SharedPtr<SDL_Window, SdlDeleter>;
     using sRenderer = SharedPtr<SDL_Renderer, SdlDeleter>;
+    using sFont = SharedPtr<TTF_Font, SdlDeleter>;
 
     // Initializer and deinitializer functions for SDL
     void initializeSdlSystems(Uint32 sdlFlags, Uint32 imageFlags);
@@ -81,9 +86,12 @@ namespace util
     void quitSdlSystems();
 
     uTexture loadTexture(uRenderer &r, const std::string &path);
+    uTexture createTextureFromText(uRenderer &r, uFont &font, const std::string &text);
 
     uWindow createWindow(const std::string &title, const Point2D &dimensions, Uint32 flags);
     uRenderer createRenderer(Uint32 flags, uWindow &window);
 
     const double generateRandom(double lower, double upper);
+
+    const std::string getAssetsPath();
 }

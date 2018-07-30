@@ -17,6 +17,5 @@ int main(int argc, char *argv[])
     game->run();
 
     util::quitSdlSystems();
-
     return EXIT_SUCCESS;
 }

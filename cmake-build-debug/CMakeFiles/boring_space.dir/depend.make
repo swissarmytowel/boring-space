@@ -49,6 +49,7 @@ CMakeFiles/boring_space.dir/main.cpp.obj: ../include/SDL2/SDL_system.h
 CMakeFiles/boring_space.dir/main.cpp.obj: ../include/SDL2/SDL_thread.h
 CMakeFiles/boring_space.dir/main.cpp.obj: ../include/SDL2/SDL_timer.h
 CMakeFiles/boring_space.dir/main.cpp.obj: ../include/SDL2/SDL_touch.h
+CMakeFiles/boring_space.dir/main.cpp.obj: ../include/SDL2/SDL_ttf.h
 CMakeFiles/boring_space.dir/main.cpp.obj: ../include/SDL2/SDL_version.h
 CMakeFiles/boring_space.dir/main.cpp.obj: ../include/SDL2/SDL_video.h
 CMakeFiles/boring_space.dir/main.cpp.obj: ../include/SDL2/begin_code.h
@@ -102,6 +103,7 @@ CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/SDL_system.h
 CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/SDL_thread.h
 CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/SDL_timer.h
 CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/SDL_touch.h
+CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/SDL_ttf.h
 CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/SDL_version.h
 CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/SDL_video.h
 CMakeFiles/boring_space.dir/src/Asteroid.cpp.obj: ../include/SDL2/begin_code.h
@@ -154,6 +156,7 @@ CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/SDL_system.h
 CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/SDL_thread.h
 CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/SDL_timer.h
 CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/SDL_touch.h
+CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/SDL_ttf.h
 CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/SDL_version.h
 CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/SDL_video.h
 CMakeFiles/boring_space.dir/src/Entity.cpp.obj: ../include/SDL2/begin_code.h
@@ -211,6 +214,7 @@ CMakeFiles/boring_space.dir/src/Game.cpp.obj: ../include/SDL2/SDL_system.h
 CMakeFiles/boring_space.dir/src/Game.cpp.obj: ../include/SDL2/SDL_thread.h
 CMakeFiles/boring_space.dir/src/Game.cpp.obj: ../include/SDL2/SDL_timer.h
 CMakeFiles/boring_space.dir/src/Game.cpp.obj: ../include/SDL2/SDL_touch.h
+CMakeFiles/boring_space.dir/src/Game.cpp.obj: ../include/SDL2/SDL_ttf.h
 CMakeFiles/boring_space.dir/src/Game.cpp.obj: ../include/SDL2/SDL_version.h
 CMakeFiles/boring_space.dir/src/Game.cpp.obj: ../include/SDL2/SDL_video.h
 CMakeFiles/boring_space.dir/src/Game.cpp.obj: ../include/SDL2/begin_code.h
@@ -263,6 +267,7 @@ CMakeFiles/boring_space.dir/src/Particle.cpp.obj: ../include/SDL2/SDL_system.h
 CMakeFiles/boring_space.dir/src/Particle.cpp.obj: ../include/SDL2/SDL_thread.h
 CMakeFiles/boring_space.dir/src/Particle.cpp.obj: ../include/SDL2/SDL_timer.h
 CMakeFiles/boring_space.dir/src/Particle.cpp.obj: ../include/SDL2/SDL_touch.h
+CMakeFiles/boring_space.dir/src/Particle.cpp.obj: ../include/SDL2/SDL_ttf.h
 CMakeFiles/boring_space.dir/src/Particle.cpp.obj: ../include/SDL2/SDL_version.h
 CMakeFiles/boring_space.dir/src/Particle.cpp.obj: ../include/SDL2/SDL_video.h
 CMakeFiles/boring_space.dir/src/Particle.cpp.obj: ../include/SDL2/begin_code.h
@@ -316,6 +321,7 @@ CMakeFiles/boring_space.dir/src/Player.cpp.obj: ../include/SDL2/SDL_system.h
 CMakeFiles/boring_space.dir/src/Player.cpp.obj: ../include/SDL2/SDL_thread.h
 CMakeFiles/boring_space.dir/src/Player.cpp.obj: ../include/SDL2/SDL_timer.h
 CMakeFiles/boring_space.dir/src/Player.cpp.obj: ../include/SDL2/SDL_touch.h
+CMakeFiles/boring_space.dir/src/Player.cpp.obj: ../include/SDL2/SDL_ttf.h
 CMakeFiles/boring_space.dir/src/Player.cpp.obj: ../include/SDL2/SDL_version.h
 CMakeFiles/boring_space.dir/src/Player.cpp.obj: ../include/SDL2/SDL_video.h
 CMakeFiles/boring_space.dir/src/Player.cpp.obj: ../include/SDL2/begin_code.h
@@ -372,6 +378,7 @@ CMakeFiles/boring_space.dir/src/Projectile.cpp.obj: ../include/SDL2/SDL_system.h
 CMakeFiles/boring_space.dir/src/Projectile.cpp.obj: ../include/SDL2/SDL_thread.h
 CMakeFiles/boring_space.dir/src/Projectile.cpp.obj: ../include/SDL2/SDL_timer.h
 CMakeFiles/boring_space.dir/src/Projectile.cpp.obj: ../include/SDL2/SDL_touch.h
+CMakeFiles/boring_space.dir/src/Projectile.cpp.obj: ../include/SDL2/SDL_ttf.h
 CMakeFiles/boring_space.dir/src/Projectile.cpp.obj: ../include/SDL2/SDL_version.h
 CMakeFiles/boring_space.dir/src/Projectile.cpp.obj: ../include/SDL2/SDL_video.h
 CMakeFiles/boring_space.dir/src/Projectile.cpp.obj: ../include/SDL2/begin_code.h
@@ -426,10 +433,13 @@ CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/SDL2/SDL_system.h
 CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/SDL2/SDL_thread.h
 CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/SDL2/SDL_timer.h
 CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/SDL2/SDL_touch.h
+CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/SDL2/SDL_ttf.h
 CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/SDL2/SDL_version.h
 CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/SDL2/SDL_video.h
 CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/SDL2/begin_code.h
 CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/SDL2/close_code.h
+CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/Timer.hpp
+CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/globals.hpp
 CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../include/utilities.hpp
 CMakeFiles/boring_space.dir/src/utilities.cpp.obj: ../src/utilities.cpp
 

@@ -30,10 +30,14 @@ namespace game
         void renderEntities();
         void renderParticles();
 
+        void updateText();
+        void renderText();
+
         void handleInput();
 
         std::vector<visual::Particle> _particles;
         std::vector<std::unique_ptr<entity::Entity>> _objects;
+        std::vector<util::uTexture> _cachedNumbers;
 
         entity::Player _player;
 
@@ -42,6 +46,9 @@ namespace game
         util::uTexture _sprites;
         util::uWindow _window;
         util::uRenderer _renderer;
+
+        util::uFont _font;
+        std::string _hudText;
 
         bool _isRunning;
 
